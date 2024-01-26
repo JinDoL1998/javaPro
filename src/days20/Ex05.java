@@ -1,5 +1,6 @@
 package days20;
 
+import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
 import java.util.Date;
@@ -19,8 +20,8 @@ public class Ex05 {
 
 	public static void main(String[] args) {
 		
+		/* format
 		Calendar c = Calendar.getInstance();
-		
 		// 24년 1월 26일 (금요일)
 		
 		String pattern = "yy년 M월 d일 (E요일)";
@@ -28,6 +29,27 @@ public class Ex05 {
 		Date d = c.getTime();
 		String strDF = sdf.format(d);
 		System.out.println(strDF);
+		*/
+		
+		// [2]
+        String strDate = "24년 1월 26일 (금요일)";
+		//String strDate = "24년 1월 26일";
+        String pattern = "yy년 M월 dd일 (E)";
+        // String pattern = "yy년 M월 d일";
+        SimpleDateFormat sdf = new SimpleDateFormat(pattern);
+
+        // 1) Date d
+        try {
+            // String -> Date 변환(파싱)
+            Date d = sdf.parse(strDate);
+            System.out.println(d.toLocaleString());
+        } catch (ParseException e) {
+            e.printStackTrace();
+        }
+		// 2) Calendar c
+		
+		
+		
 		
 	}
 
