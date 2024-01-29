@@ -3,16 +3,12 @@ package days14;
 import java.io.IOException;
 import java.util.Scanner;
 
-/**
- * @author jinseong
- * @date 2024. 1. 18. - 오후 2:45:18
- * @subject days11.Ex05_01.java
- * @content	Student 학생 클래스 수정
- */
 public class Ex08 {
 
 	public static void main(String[] args) throws IOException {
 		
+		// 한반에 30명 학생 - 이, 국, 영, 수, 총, 평, 등 성적처리
+		// Student 클래스 배열 처리. + ArrayList 컬렉션 클래스
 		final int STUDENT_COUNT = 23;
 		
 		String name;
@@ -77,7 +73,5 @@ public class Ex08 {
 		}
 		
 	}
-	
-	
 
 }

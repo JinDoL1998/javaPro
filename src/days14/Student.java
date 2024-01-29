@@ -2,10 +2,7 @@ package days14;
 
 public class Student {
 
-	public Student() {
-		
-		
-	}
+	public Student() { }
 
 	public Student(String name, int kor, int eng, int math, int total, double avg, int rank, int wrank) {
 
