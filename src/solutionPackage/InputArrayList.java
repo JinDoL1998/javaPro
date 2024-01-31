@@ -22,7 +22,7 @@ public class InputArrayList {
             // ArrayList에 입력받은 값을 추가
             scoreList.add(input);
         }
-
+        
         // 입력 받은 점수 출력
         System.out.println("입력한 점수: " + scoreList);
 
