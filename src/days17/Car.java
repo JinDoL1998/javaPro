@@ -6,6 +6,28 @@ public class Car {
 	String name;
 	String gearType;
 	int door;
+	
+	// 익명클래스(한번만 쓸거라서 클래스 생성 안해주고 사용)
+	private Engine engine2 = new Engine() {
+		
+		@Override
+		public void stop() {
+			// TODO Auto-generated method stub
+			
+		}
+		
+		@Override
+		public void moreFuel(int fuel) {
+			// TODO Auto-generated method stub
+			
+		}
+		
+		@Override
+		public void lessFuel(int fuel) {
+			// TODO Auto-generated method stub
+			
+		}
+	};
 		
 	//    인터페이스 (  다형성  )
 	private Engine engine = null;

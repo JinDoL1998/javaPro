@@ -11,12 +11,14 @@ public class Race {
 
 	public static void main(String[] args) throws IOException {
 
-		// https://school.programmers.co.kr/learn/courses/30/lessons/178871		
-		
+		// https://school.programmers.co.kr/learn/courses/30/lessons/178871
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 		Scanner scanner = new Scanner(System.in);
-        ArrayList<String> playerList = new ArrayList<>();
+		
+		// [1]
+        // ArrayList<String> playerList = new ArrayList<>();
 
+        /*
         while (true) {
             System.out.print("선수이름 입력 (종료하려면 'exit' 입력): ");
             String inputPlayer = br.readLine();
@@ -50,28 +52,35 @@ public class Race {
         System.out.println(Arrays.toString(answer));
         
 		System.out.println(Arrays.toString(players));
-        
+        */
 		
-//		String[] players = new String[50];
-//		String[] callings = new String[100000];
-//		
-//		int index = 0;
-//		
-//		while (index < players.length) {
-//			System.out.print("선수이름 입력 (종료하려면 'exit' 입력): ");
-//			players[index] = scanner.next();
-//			if(players[index].equalsIgnoreCase("exit")) {
-//				break;
-//			}
-//			
-//			index++;
-//		}
-//		
+        
+		// [2]
+		String[] players = new String[50];
+		String[] callings = new String[100000];
+		
+		int index = 0;
+		
+		while (index < players.length) {
+			System.out.print("선수이름 입력 (종료하려면 'exit' 입력): ");
+			players[index] = scanner.next();
+			
+			if(players[index].equalsIgnoreCase("exit")) {
+				break;
+			}
+			
+			if(players[index]== null) return;
+			
+			index++;
+		}
+		
 //		ArrayList<String> playerList = new ArrayList<>(Arrays.asList(players));
 //		
 //		playerList.removeIf(value -> value == null);
-//		
 //		System.out.println(playerList);
+		
+		System.out.println(Arrays.toString(players));
+		
 
 	} // main
 			

@@ -17,7 +17,6 @@ public class Ex11 {
 		
 		Properties p = System.getProperties();
 		Set<Entry<Object, Object>> es = p.entrySet();
-		
 		Iterator<Entry<Object, Object>> ir = es.iterator();
 		
 		while (ir.hasNext()) {
