@@ -21,13 +21,15 @@ public class Ex04_02 {
 		try (Scanner scanner = new Scanner(System.in);){
 
 			System.out.print("저장할 파일명 입력 : ");
-			child = scanner.next();
+			child = scanner.nextLine();
+		
 			File saveFile = new File(parent, child);
 			try (FileWriter fw = new FileWriter(saveFile, true)){
 				do {
 					System.out.print("저장할 문자열(Data) 입력 : ");
 					content = scanner.nextLine();
 					fw.append(content);
+					fw.flush();	// ***
 					fw.append(System.lineSeparator());
 					
 					System.out.print("계속? (y/Y)");

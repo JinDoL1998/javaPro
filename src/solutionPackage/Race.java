@@ -5,6 +5,7 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.HashMap;
 import java.util.Scanner;
 
 public class Race {
@@ -45,25 +46,12 @@ public class Race {
         }
         
         System.out.println(callList);
-        
-//        for(int i = 0; i < callList.size(); i++) {
-//        	callList.get(i)
-//        }
-        
-        
-        // System.out.println(callList);
         String[] callings = callList.toArray(new String[0]);
         
-		
+        
         String[] answer = solution(players, callings);
         
         System.out.println(Arrays.toString(answer));
-        
-        
-        
-		
-        
-		
         
 		/* [2]
 		String[] players = new String[50];
@@ -97,7 +85,16 @@ public class Race {
 	
 	public static String[] solution(String[] players, String[] callings) {
 		String[] answer = {};
-				
+		
+		HashMap<String, Integer> callCountMap = new HashMap<>();
+		for(String player : callings) {
+			callCountMap.put(player, callCountMap.getOrDefault(player, 0) + 1);
+		}
+		
+		
+		
+		
+		/*
 		for(int i = 0; i < callings.length; i++) {
 			for(int j = 0; j < players.length; j++) {
 				if(callings[i].equals(players[j])) {
@@ -107,6 +104,7 @@ public class Race {
 				}
 			}
 		}
+		*/
 
 		return answer = players;
 	}
