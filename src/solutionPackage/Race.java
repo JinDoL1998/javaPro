@@ -16,9 +16,9 @@ public class Race {
 		Scanner scanner = new Scanner(System.in);
 		
 		// [1]
-        // ArrayList<String> playerList = new ArrayList<>();
+        ArrayList<String> playerList = new ArrayList<>();
 
-        /*
+        
         while (true) {
             System.out.print("선수이름 입력 (종료하려면 'exit' 입력): ");
             String inputPlayer = br.readLine();
@@ -44,18 +44,28 @@ public class Race {
         	callList.add(callPlayer);
         }
         
+        System.out.println(callList);
+        
+//        for(int i = 0; i < callList.size(); i++) {
+//        	callList.get(i)
+//        }
+        
+        
         // System.out.println(callList);
         String[] callings = callList.toArray(new String[0]);
         
 		
         String[] answer = solution(players, callings);
+        
         System.out.println(Arrays.toString(answer));
         
-		System.out.println(Arrays.toString(players));
-        */
+        
+        
 		
         
-		// [2]
+		
+        
+		/* [2]
 		String[] players = new String[50];
 		String[] callings = new String[100000];
 		
@@ -80,7 +90,7 @@ public class Race {
 //		System.out.println(playerList);
 		
 		System.out.println(Arrays.toString(players));
-		
+		*/
 
 	} // main
 			

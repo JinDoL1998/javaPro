@@ -11,8 +11,9 @@ import lombok.Data;
 public class MemberVO {
 
 	public MemberVO() {
-		// TODO Auto-generated constructor stub
+		
 	}
+	
 	private String name;
 	private String position;	// 팀장, 팀원
 	
