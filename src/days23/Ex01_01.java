@@ -81,8 +81,6 @@ public class Ex01_01 {
 		
 	}
 
-
-
 	private static void dispStudentInfo(ArrayList sistList) {
 		
 		int ban = 1;
